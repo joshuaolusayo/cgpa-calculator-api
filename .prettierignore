@@ -1,0 +1,12 @@
+.next
+next-env.d.ts
+node_modules
+yarn.lock
+package-lock.json
+# public
+.env
+.nyc_output
+.scannerwork
+.swc
+.vscode
+.husky
