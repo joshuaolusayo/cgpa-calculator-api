@@ -1,8 +1,8 @@
 const jwt = require("jsonwebtoken");
 const asyncHandler = require("express-async-handler");
-const User = require("../Models/UserModel.js");
+const User = require("../models/user");
 
-const protect = asyncHandler(async (req, res, next) => {
+const authenticate_user = asyncHandler(async (req, res, next) => {
   let token;
 
   if (
@@ -28,7 +28,7 @@ const protect = asyncHandler(async (req, res, next) => {
   }
 });
 
-const admin = (req, res, next) => {
+const authenticate_admin = (req, res, next) => {
   if (req.user && req.user.role === "admin") {
     next();
   } else {
@@ -37,4 +37,4 @@ const admin = (req, res, next) => {
   }
 };
 
-module.exports = { protect, admin };
+module.exports = { authenticate_user, authenticate_admin };

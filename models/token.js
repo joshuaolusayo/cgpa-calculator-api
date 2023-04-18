@@ -1,9 +1,9 @@
-const mongoose = require("mongoose");
+const { model, Schema } = require("mongoose");
 
-const TokenSchema = mongoose.Schema(
+const TokenSchema = Schema(
   {
     _userId: {
-      type: mongoose.Schema.Types.ObjectId,
+      type: Schema.Types.ObjectId,
       ref: "User",
       required: true,
     },
@@ -18,4 +18,4 @@ const TokenSchema = mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("Token", TokenSchema);
+module.exports = model("Token", TokenSchema);

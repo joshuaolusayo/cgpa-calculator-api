@@ -1,0 +1,866 @@
+[2023-04-18T20:56:52.989Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T20:57:12.813Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T20:57:24.091Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T20:57:48.746Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T20:57:51.968Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T20:58:05.396Z : [31merror[39m] - uncaughtException: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+Error: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:985:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:833:27)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/server.js:21:14)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+[2023-04-18T20:58:05.402Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T20:58:38.832Z : [31merror[39m] - uncaughtException: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+Error: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:985:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:833:27)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/server.js:21:14)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+[2023-04-18T20:58:38.837Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T20:58:41.900Z : [31merror[39m] - uncaughtException: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+Error: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:985:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:833:27)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/server.js:21:14)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+[2023-04-18T20:58:41.906Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T20:58:45.833Z : [31merror[39m] - uncaughtException: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+Error: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:985:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:833:27)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/server.js:20:14)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+[2023-04-18T20:58:45.838Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T20:58:56.504Z : [31merror[39m] - uncaughtException: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+Error: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:985:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:833:27)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/server.js:21:14)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+[2023-04-18T20:58:56.509Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T20:59:01.642Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T20:59:04.044Z : [31merror[39m] - uncaughtException: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+Error: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:985:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:833:27)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/server.js:11:14)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+[2023-04-18T20:59:04.049Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T20:59:05.093Z : [31merror[39m] - uncaughtException: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+Error: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:985:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:833:27)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/server.js:11:14)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+[2023-04-18T20:59:05.098Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T20:59:09.739Z : [31merror[39m] - uncaughtException: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+Error: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:985:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:833:27)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/server.js:11:14)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+[2023-04-18T20:59:09.745Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T20:59:12.317Z : [31merror[39m] - uncaughtException: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+Error: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:985:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:833:27)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/server.js:12:14)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+[2023-04-18T20:59:12.322Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T20:59:26.745Z : [31merror[39m] - uncaughtException: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+Error: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:985:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:833:27)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/server.js:12:14)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+[2023-04-18T20:59:26.750Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T20:59:32.476Z : [31merror[39m] - uncaughtException: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+Error: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:985:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:833:27)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/server.js:12:14)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+[2023-04-18T20:59:32.482Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:00:36.025Z : [31merror[39m] - uncaughtException: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+Error: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:985:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:833:27)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/server.js:12:14)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+[2023-04-18T21:00:36.031Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:00:47.506Z : [31merror[39m] - uncaughtException: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+Error: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:985:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:833:27)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/server.js:12:14)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+[2023-04-18T21:00:47.511Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:00:56.621Z : [31merror[39m] - uncaughtException: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+Error: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:985:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:833:27)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/server.js:12:14)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+[2023-04-18T21:00:56.627Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:02:07.362Z : [31merror[39m] - uncaughtException: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+Error: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:985:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:833:27)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/server.js:12:14)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+[2023-04-18T21:02:07.367Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:02:08.942Z : [31merror[39m] - uncaughtException: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+Error: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:985:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:833:27)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/server.js:12:14)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+[2023-04-18T21:02:08.947Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:05:16.592Z : [31merror[39m] - uncaughtException: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+Error: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:985:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:833:27)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/server.js:12:14)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+[2023-04-18T21:05:16.599Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:05:29.831Z : [31merror[39m] - uncaughtException: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+Error: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:985:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:833:27)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/server.js:12:14)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+[2023-04-18T21:05:29.836Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:05:33.878Z : [31merror[39m] - uncaughtException: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+Error: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:985:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:833:27)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/server.js:12:14)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+[2023-04-18T21:05:33.889Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:05:37.408Z : [31merror[39m] - uncaughtException: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+Error: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:985:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:833:27)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/server.js:12:14)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+[2023-04-18T21:05:37.414Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:05:53.651Z : [31merror[39m] - uncaughtException: Cannot read properties of undefined (reading 'get')
+TypeError: Cannot read properties of undefined (reading 'get')
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/user.js:42:12)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/_config.js:14:28)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+[2023-04-18T21:05:53.656Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:06:01.031Z : [31merror[39m] - uncaughtException: Cannot read properties of undefined (reading 'length')
+TypeError: Cannot read properties of undefined (reading 'length')
+    at pathtoRegexp (/Users/Joshua/Documents/Codes/poultry-server/node_modules/path-to-regexp/index.js:63:49)
+    at new Layer (/Users/Joshua/Documents/Codes/poultry-server/node_modules/express/lib/router/layer.js:45:17)
+    at Function.route (/Users/Joshua/Documents/Codes/poultry-server/node_modules/express/lib/router/index.js:505:15)
+    at Function.proto.<computed> [as options] (/Users/Joshua/Documents/Codes/poultry-server/node_modules/express/lib/router/index.js:520:22)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/user.js:39:12)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+[2023-04-18T21:06:01.037Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:06:05.362Z : [31merror[39m] - uncaughtException: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+Error: Cannot find module 'cors'
+Require stack:
+- /Users/Joshua/Documents/Codes/poultry-server/server.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:985:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:833:27)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/server.js:12:14)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+[2023-04-18T21:06:05.367Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:06:12.283Z : [31merror[39m] - uncaughtException: req is not defined
+ReferenceError: req is not defined
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/user.js:39:35)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/_config.js:14:28)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+[2023-04-18T21:06:12.290Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:06:30.341Z : [31merror[39m] - uncaughtException: Malformed arrow function parameter list
+/Users/Joshua/Documents/Codes/poultry-server/routes/user.js:39
+userRouter.post('/', asyncHandler(req, res, next) => )
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Malformed arrow function parameter list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1084:15)
+    at Module._compile (node:internal/modules/cjs/loader:1119:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/_config.js:14:28)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+[2023-04-18T21:06:30.346Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:06:45.439Z : [31merror[39m] - uncaughtException: Malformed arrow function parameter list
+/Users/Joshua/Documents/Codes/poultry-server/routes/user.js:39
+userRouter.post('/', asyncHandler(req, res, next) => UserConto)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Malformed arrow function parameter list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1084:15)
+    at Module._compile (node:internal/modules/cjs/loader:1119:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/_config.js:14:28)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+[2023-04-18T21:06:45.444Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:06:47.239Z : [31merror[39m] - uncaughtException: Malformed arrow function parameter list
+/Users/Joshua/Documents/Codes/poultry-server/routes/user.js:39
+userRouter.post('/', asyncHandler(req, res, next) => UserContro)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Malformed arrow function parameter list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1084:15)
+    at Module._compile (node:internal/modules/cjs/loader:1119:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/_config.js:14:28)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+[2023-04-18T21:06:47.245Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:06:48.699Z : [31merror[39m] - uncaughtException: Malformed arrow function parameter list
+/Users/Joshua/Documents/Codes/poultry-server/routes/user.js:39
+userRouter.post('/', asyncHandler(req, res, next) => )
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Malformed arrow function parameter list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1084:15)
+    at Module._compile (node:internal/modules/cjs/loader:1119:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/_config.js:14:28)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+[2023-04-18T21:06:48.705Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:08:22.029Z : [31merror[39m] - uncaughtException: Malformed arrow function parameter list
+/Users/Joshua/Documents/Codes/poultry-server/routes/user.js:40
+userRouter.post('/', asyncHandler(req, res, next) => )
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Malformed arrow function parameter list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1084:15)
+    at Module._compile (node:internal/modules/cjs/loader:1119:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/_config.js:14:28)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+[2023-04-18T21:08:22.034Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:08:23.496Z : [31merror[39m] - uncaughtException: Malformed arrow function parameter list
+/Users/Joshua/Documents/Codes/poultry-server/routes/user.js:40
+userRouter.post('/', asyncHandler(req, res, next) => )
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Malformed arrow function parameter list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1084:15)
+    at Module._compile (node:internal/modules/cjs/loader:1119:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/_config.js:14:28)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+[2023-04-18T21:08:23.501Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:08:25.255Z : [31merror[39m] - uncaughtException: Malformed arrow function parameter list
+/Users/Joshua/Documents/Codes/poultry-server/routes/user.js:40
+userRouter.post('/', asyncHandler(req, res, next) => )
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Malformed arrow function parameter list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1084:15)
+    at Module._compile (node:internal/modules/cjs/loader:1119:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/_config.js:14:28)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+[2023-04-18T21:08:25.260Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:08:26.282Z : [31merror[39m] - uncaughtException: Malformed arrow function parameter list
+/Users/Joshua/Documents/Codes/poultry-server/routes/user.js:40
+userRouter.post('/', asyncHandler(req, res, next) => )
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Malformed arrow function parameter list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1084:15)
+    at Module._compile (node:internal/modules/cjs/loader:1119:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/_config.js:14:28)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+[2023-04-18T21:08:26.287Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:08:28.776Z : [31merror[39m] - uncaughtException: Malformed arrow function parameter list
+/Users/Joshua/Documents/Codes/poultry-server/routes/user.js:40
+userRouter.post('/', asyncHandler(req, res, next) => )
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Malformed arrow function parameter list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1084:15)
+    at Module._compile (node:internal/modules/cjs/loader:1119:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/_config.js:14:28)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+[2023-04-18T21:08:28.781Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:08:30.660Z : [31merror[39m] - uncaughtException: Malformed arrow function parameter list
+/Users/Joshua/Documents/Codes/poultry-server/routes/user.js:40
+userRouter.post('/', asyncHandler(req, res, next) => )
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Malformed arrow function parameter list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1084:15)
+    at Module._compile (node:internal/modules/cjs/loader:1119:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/_config.js:14:28)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+[2023-04-18T21:08:30.666Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:08:32.571Z : [31merror[39m] - uncaughtException: Malformed arrow function parameter list
+/Users/Joshua/Documents/Codes/poultry-server/routes/user.js:40
+userRouter.post('/', asyncHandler(req, res, next) => )
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Malformed arrow function parameter list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1084:15)
+    at Module._compile (node:internal/modules/cjs/loader:1119:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/_config.js:14:28)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+[2023-04-18T21:08:32.576Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:08:37.347Z : [31merror[39m] - uncaughtException: Malformed arrow function parameter list
+/Users/Joshua/Documents/Codes/poultry-server/routes/user.js:40
+userRouter.post('/', asyncHandler(req, res, next) => )
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Malformed arrow function parameter list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1084:15)
+    at Module._compile (node:internal/modules/cjs/loader:1119:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/_config.js:14:28)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+[2023-04-18T21:08:37.353Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:08:40.057Z : [31merror[39m] - uncaughtException: Malformed arrow function parameter list
+/Users/Joshua/Documents/Codes/poultry-server/routes/user.js:40
+userRouter.post('/', asyncHandler(req, res, next) => )
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Malformed arrow function parameter list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1084:15)
+    at Module._compile (node:internal/modules/cjs/loader:1119:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/_config.js:14:28)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+[2023-04-18T21:08:40.062Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:08:41.742Z : [31merror[39m] - uncaughtException: Malformed arrow function parameter list
+/Users/Joshua/Documents/Codes/poultry-server/routes/user.js:40
+userRouter.post('/', asyncHandler(req, res, next) => )
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Malformed arrow function parameter list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1084:15)
+    at Module._compile (node:internal/modules/cjs/loader:1119:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/_config.js:14:28)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+[2023-04-18T21:08:41.748Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:08:50.933Z : [31merror[39m] - uncaughtException: Malformed arrow function parameter list
+/Users/Joshua/Documents/Codes/poultry-server/routes/user.js:40
+userRouter.post('/', asyncHandler(req, res, next) => UserController.c)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Malformed arrow function parameter list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1084:15)
+    at Module._compile (node:internal/modules/cjs/loader:1119:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/_config.js:14:28)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+[2023-04-18T21:08:50.938Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:08:52.495Z : [31merror[39m] - uncaughtException: Malformed arrow function parameter list
+/Users/Joshua/Documents/Codes/poultry-server/routes/user.js:40
+userRouter.post('/', asyncHandler(req, res, next) => UserController.create_user)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Malformed arrow function parameter list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1084:15)
+    at Module._compile (node:internal/modules/cjs/loader:1119:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/_config.js:14:28)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+[2023-04-18T21:08:52.500Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:08:53.569Z : [31merror[39m] - uncaughtException: Malformed arrow function parameter list
+/Users/Joshua/Documents/Codes/poultry-server/routes/user.js:40
+userRouter.post('/', asyncHandler(req, res, next) => UserController.create_user())
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Malformed arrow function parameter list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1084:15)
+    at Module._compile (node:internal/modules/cjs/loader:1119:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/_config.js:14:28)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+[2023-04-18T21:08:53.574Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:08:58.510Z : [31merror[39m] - uncaughtException: Malformed arrow function parameter list
+/Users/Joshua/Documents/Codes/poultry-server/routes/user.js:40
+userRouter.post('/', asyncHandler(req, res, next) => UserController.create_user(req.body))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Malformed arrow function parameter list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1084:15)
+    at Module._compile (node:internal/modules/cjs/loader:1119:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/_config.js:14:28)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+[2023-04-18T21:08:58.516Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:09:06.997Z : [31merror[39m] - uncaughtException: missing ) after argument list
+/Users/Joshua/Documents/Codes/poultry-server/routes/user.js:40
+userRouter.post('/', asyncHandler((req, res, next) => UserController.create_user(req.body))
+                                                                                          ^
+
+SyntaxError: missing ) after argument list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1084:15)
+    at Module._compile (node:internal/modules/cjs/loader:1119:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/_config.js:14:28)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+[2023-04-18T21:09:07.003Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:09:09.091Z : [31merror[39m] - uncaughtException: missing ) after argument list
+/Users/Joshua/Documents/Codes/poultry-server/routes/user.js:40
+userRouter.post('/', asyncHandler((req, res, next) => UserController.create_user(req.body))
+                                                                                          ^
+
+SyntaxError: missing ) after argument list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1084:15)
+    at Module._compile (node:internal/modules/cjs/loader:1119:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/_config.js:14:28)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+[2023-04-18T21:09:09.096Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:09:19.011Z : [31merror[39m] - uncaughtException: missing ) after argument list
+/Users/Joshua/Documents/Codes/poultry-server/routes/user.js:40
+userRouter.post('/', asyncHandler((req, res, next) => UserController.create_user(req.body))x)
+                                                                                          ^
+
+SyntaxError: missing ) after argument list
+    at Object.compileFunction (node:vm:360:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1084:15)
+    at Module._compile (node:internal/modules/cjs/loader:1119:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/routes/_config.js:14:28)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+[2023-04-18T21:09:19.017Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:09:20.648Z : [31merror[39m] - uncaughtException: glob is not defined
+ReferenceError: glob is not defined
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/controllers/_super.js:9:15)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/controllers/user.js:4:25)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+[2023-04-18T21:09:20.654Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:09:37.995Z : [31merror[39m] - uncaughtException: glob is not defined
+ReferenceError: glob is not defined
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/controllers/_super.js:9:15)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/controllers/user.js:4:25)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+[2023-04-18T21:09:38.000Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:09:41.280Z : [31merror[39m] - uncaughtException: glob is not defined
+ReferenceError: glob is not defined
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/controllers/_super.js:9:15)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/controllers/user.js:4:25)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+[2023-04-18T21:09:41.285Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+[2023-04-18T21:09:45.455Z : [31merror[39m] - uncaughtException: glob is not defined
+ReferenceError: glob is not defined
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/controllers/_super.js:9:15)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+    at Module.load (node:internal/modules/cjs/loader:1033:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:868:12)
+    at Module.require (node:internal/modules/cjs/loader:1057:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (/Users/Joshua/Documents/Codes/poultry-server/controllers/user.js:4:25)
+    at Module._compile (node:internal/modules/cjs/loader:1155:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1209:10)
+[2023-04-18T21:09:45.461Z : [31merror[39m] - uncaughtException: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'
+Error: ENOENT: no such file or directory, open '/Users/Joshua/Documents/Codes/logs/request.log'

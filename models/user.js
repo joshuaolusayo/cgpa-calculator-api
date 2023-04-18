@@ -1,7 +1,7 @@
-const mongoose = require("mongoose");
+const { model, Schema } = require("mongoose");
 const bcrypt = require("bcryptjs");
 
-const userSchema = mongoose.Schema(
+const UserSchema = new Schema(
   {
     name: {
       type: String,
@@ -15,12 +15,17 @@ const userSchema = mongoose.Schema(
     password: {
       type: String,
       required: true,
+      default: "User123##",
     },
     role: {
       type: String,
       enum: ["admin", "user"],
       required: true,
       default: "user",
+    },
+    organization: {
+      type: Schema.Types.ObjectId,
+      ref: "Organization",
     },
     isVerified: {
       type: Boolean,
@@ -39,12 +44,12 @@ const userSchema = mongoose.Schema(
 );
 
 // Login
-userSchema.methods.matchPassword = async function (enterPassword) {
+UserSchema.methods.matchPassword = async function (enterPassword) {
   return await bcrypt.compare(enterPassword, this.password);
 };
 
 // Register
-userSchema.pre("save", async function (next) {
+UserSchema.pre("save", async function (next) {
   if (!this.isModified("password")) {
     next();
   }
@@ -52,6 +57,8 @@ userSchema.pre("save", async function (next) {
   this.password = await bcrypt.hash(this.password, salt);
 });
 
-const User = mongoose.model("User", userSchema);
+model("User", UserSchema);
 
-module.exports = User;
+// const User = model("User", UserSchema);
+
+// module.exports = User;

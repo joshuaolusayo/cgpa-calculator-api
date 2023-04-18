@@ -1,10 +1,14 @@
 const express = require("express");
 const asyncHandler = require("express-async-handler");
 const crypto = require("crypto");
-const { protect, admin } = require("../Middleware/AuthMiddleware.js");
-const generateToken = require("../utils/generateToken.js");
-const User = require("./../Models/UserModel.js");
-const Token = require("./../Models/TokenModel.js");
+const {
+  authenticate_user,
+  authenticate_admin,
+} = require("../middlewares/auth");
+const generateToken = require("../utilities/generateToken");
+const User = require("./../models/user");
+const Token = require("./../models/token");
+const UserController = require("../controllers/user");
 
 const userRouter = express.Router();
 
@@ -33,46 +37,11 @@ userRouter.post(
   })
 );
 
-// REGISTER
 userRouter.post(
   "/",
-  asyncHandler(async (req, res) => {
-    const { name, email, password } = req.body;
-
-    const userExists = await User.findOne({ email });
-
-    if (userExists) {
-      res.status(400);
-      throw new Error("User already exists");
-    }
-
-    const user = await User.create({
-      name,
-      email,
-      password,
-    });
-
-    if (user) {
-      const verificationToken = await Token.create({
-        _userId: user._id,
-        token: crypto.randomBytes(32).toString("hex"),
-      });
-
-      // console.log(token);
-
-      res.status(201).json({
-        _id: user._id,
-        name: user.name,
-        email: user.email,
-        role: user.role,
-        verificationToken: verificationToken.token,
-        status: 201,
-        // token: generateToken(user._id),
-      });
-    } else {
-      res.status(400);
-      throw new Error("Invalid User Data");
-    }
+  asyncHandler((req, _, next) => {
+    UserController.create_user(req.body);
+    next();
   })
 );
 
@@ -117,7 +86,7 @@ userRouter.get(
 // RESEND EMAIL TOKEN
 userRouter.post(
   "/resend-email-token",
-  protect,
+  authenticate_user,
   asyncHandler(async (req, res) => {
     const user = await User.findOne({ email: req.body.email });
 
@@ -147,7 +116,7 @@ userRouter.post(
 // GET USER PROFILE
 userRouter.get(
   "/profile",
-  protect,
+  authenticate_user,
   asyncHandler(async (req, res) => {
     const user = await User.findById(req.user._id);
 
@@ -169,7 +138,7 @@ userRouter.get(
 // UPDATE PROFILE
 userRouter.put(
   "/profile",
-  protect,
+  authenticate_user,
   asyncHandler(async (req, res) => {
     const user = await User.findById(req.user._id);
 
@@ -198,8 +167,8 @@ userRouter.put(
 // GET ALL USER ADMIN
 userRouter.get(
   "/",
-  protect,
-  admin,
+  authenticate_user,
+  authenticate_admin,
   asyncHandler(async (req, res) => {
     const users = await User.find({});
     res.json(users);
@@ -208,8 +177,8 @@ userRouter.get(
 
 userRouter.delete(
   "/:id",
-  protect,
-  admin,
+  authenticate_user,
+  authenticate_admin,
   asyncHandler(async (req, res) => {
     const user = await User.findById(req.params.id);
     if (!user) {
@@ -223,3 +192,40 @@ userRouter.delete(
 );
 
 module.exports = userRouter;
+
+// REGISTER
+// userRouter.post(
+//   "/",
+//   asyncHandler(async (req, res) => {
+//     const { name, email, password } = req.body;
+//     const userExists = await User.findOne({ email });
+//     if (userExists) {
+//       res.status(400);
+//       throw new Error("User already exists");
+//     }
+//     const user = await User.create({
+//       name,
+//       email,
+//       password,
+//     });
+//     if (user) {
+//       const verificationToken = await Token.create({
+//         _userId: user._id,
+//         token: crypto.randomBytes(32).toString("hex"),
+//       });
+//       // console.log(token);
+//       res.status(201).json({
+//         _id: user._id,
+//         name: user.name,
+//         email: user.email,
+//         role: user.role,
+//         verificationToken: verificationToken.token,
+//         status: 201,
+//         // token: generateToken(user._id),
+//       });
+//     } else {
+//       res.status(400);
+//       throw new Error("Invalid User Data");
+//     }
+//   })
+// );
