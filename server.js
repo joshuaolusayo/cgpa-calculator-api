@@ -1,11 +1,14 @@
 const express = require("express");
+
 const dotenv = require("dotenv");
 const connectDatabase = require("./config/mongoDb");
+
 // const ImportData = require("./DataImport");
 // import productRoute from "./Routes/ProductRoutes.js";
 // const { errorHandler, notFound } = require("./middlewares/errors");
 // const userRouter = require("./routes/user");
 const route_handler = require("./routes/_config");
+
 /** 3rd Party Middlewares */
 const app = express();
 const body_parser = require("body-parser");
@@ -31,6 +34,5 @@ app.use("/", route_handler);
 // app.use(notFound);
 // app.use(errorHandler);
 
-const PORT = process.env.PORT || 1000;
-
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, console.log(`server run in port ${PORT}`));

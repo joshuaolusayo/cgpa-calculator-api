@@ -2,8 +2,10 @@
  * @author Joshua Oyeleke <oyelekeoluwasayo@gmail.com>
  **/
 const SuperController = require("./_super");
+
 const { app_logger } = require("../utilities/logger");
 const logger = app_logger("UserController");
+const generateToken = require("../utilities/generateToken");
 
 class UserController extends SuperController {
   constructor() {
@@ -11,12 +13,37 @@ class UserController extends SuperController {
     this.Model = this.get_model("User");
   }
 
+  // done
   async getAllUsers() {
-    const users = await User.find({});
+    const users = await this.Model.find({});
     if (users) {
-      return this.process_successful_response(users);
+      return this.process_successful_response({ users, total: users.length });
     }
     return this.process_failed_response("Unable to retrieve user details", 500);
+  }
+
+  async login(data) {
+    const { email, password } = data;
+    const user = await this.Model.findOne({ email });
+    console.log(user);
+
+    const dd = await this.Model.matchPassword(password);
+    console.log(dd);
+
+    if (user && (await this.Model.matchPassword(password))) {
+      console.log("here");
+      return this.process_successful_response({
+        message: "Successfully registered",
+        _id: user._id,
+        name: user.name,
+        email: user.email,
+        role: user.role,
+        token: generateToken(user._id),
+        createdAt: user.createdAt,
+      });
+    } else {
+      return this.process_failed_response("Invalid email address or password");
+    }
   }
 
   async create_user(userDetails) {
@@ -58,23 +85,9 @@ class UserController extends SuperController {
     return verificationToken.token;
   }
 
-  //   async updateOrganizationDetails(conditions, data_to_set) {
-  //     try {
-  //       const result = await this.Model.updateOne(
-  //         { ...conditions },
-  //         {
-  //           $set: { name: data_to_set.name, address: data_to_set.address },
-  //           $currentDate: { updated_on: true },
-  //         }
-  //       );
-
-  //       return this.jsonize(result);
-  //     } catch (e) {
-  //       logger.console(e.message, "update_records");
-  //     }
-  //   }
-
   async addUserToOrganization() {}
 }
+
+console.log("testing");
 
 module.exports = new UserController();

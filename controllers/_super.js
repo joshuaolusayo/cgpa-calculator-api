@@ -2,15 +2,6 @@
  * @author Joshua Oyeleke <oyelekeoluwasayo@gmail.com>
  **/
 const mongoose = require("mongoose");
-const { resolve } = require("path");
-
-/** require all models here */
-const basePath = resolve(__dirname, "../models/");
-const files = glob.sync("*.js", { cwd: basePath });
-files.forEach((file) => {
-  if (file.toLocaleLowerCase().includes("_config")) return;
-  require(resolve(basePath, file));
-});
 
 /** */
 class SuperController {

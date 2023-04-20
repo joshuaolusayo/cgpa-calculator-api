@@ -5,6 +5,7 @@ require("dotenv").config();
 const { app_logger } = require("../utilities/logger");
 
 const logger = app_logger("HTTP Middleware");
+
 module.exports = {
   handle_404(request, response, next) {
     const return_data = {
