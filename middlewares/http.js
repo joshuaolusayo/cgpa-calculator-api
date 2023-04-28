@@ -2,9 +2,9 @@
  * @author Joshua Oyeleke <oyelekeoluwasayo@gmail.com>
  **/
 require("dotenv").config();
-const { app_logger } = require("../utilities/logger");
+// const { app_logger } = require("../utilities/logger");
 
-const logger = app_logger("HTTP Middleware");
+// const logger = app_logger("HTTP Middleware");
 
 module.exports = {
   handle_404(request, response, next) {
@@ -17,7 +17,7 @@ module.exports = {
   },
 
   handle_error(error, request, response, next) {
-    logger.error(error.error, "handle_error");
+    // logger.error(error.error, "handle_error");
     return response.status(error.status_code || 500).json({
       status_code: error.status_code,
       error: error.error,

@@ -19,9 +19,9 @@ const UserSchema = new Schema(
     },
     role: {
       type: String,
-      enum: ["admin", "user"],
+      enum: ["admin", "organization_admin", "organization_staff"],
       required: true,
-      default: "user",
+      default: "organization_staff",
     },
     organization: {
       type: Schema.Types.ObjectId,
@@ -58,7 +58,3 @@ UserSchema.pre("save", async function (next) {
 });
 
 model("User", UserSchema);
-
-// const User = model("User", UserSchema);
-
-// module.exports = User;

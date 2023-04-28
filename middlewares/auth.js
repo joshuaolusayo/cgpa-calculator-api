@@ -1,70 +1,81 @@
 const jwt = require("jsonwebtoken");
-const asyncHandler = require("express-async-handler");
+// const asyncHandler = require("express-async-handler");
 const User = require("../models/user");
 const SuperController = require("../controllers/_super");
-const rootService = new SuperController();
+// const rootService = new SuperController();
 
-const authenticate_api_key = async (request, __, next) => {
-  try {
-    const { authorization } = request.headers;
-    if (!authorization) {
-      return next(process_failed_response("Unauthorized", 403));
-    }
-    const [, api_key] = authorization.split(" ");
-
-    if (!api_key) {
-      return next(rootService.process_failed_response("Unauthorized", 403));
-    }
-
-    const decoded = jwt.verify(api_key, process.env.JWT_SECRET);
-
-    request.user = await rootService
-      .get_model("User")
-      .findById(decoded.id)
-      .select("-password");
-    next();
-  } catch (e) {
-    logger.error(e.message, "authenticate_api_key");
-    next(rootService.process_failed_response("Unauthorized", 403));
+class AuthService extends SuperController {
+  constructor() {
+    super();
+    this.authenticate_api_key = this.authenticate_api_key.bind(this);
   }
-};
 
-const authenticate_user = asyncHandler(async (req, res, next) => {
-  let token;
-
-  if (
-    req.headers.authorization &&
-    req.headers.authorization.startsWith("Bearer")
-  ) {
+  async authenticate_api_key(request, _, next) {
     try {
-      token = req.headers.authorization.split(" ")[1];
-      console.log({ token });
-      const decoded = jwt.verify(token, process.env.JWT_SECRET);
-      console.log({ decoded });
-      req.user = await User.findById(decoded.id).select("-password");
+      const { authorization } = request.headers;
+      if (!authorization) {
+        return next(this.process_failed_response("Unauthorized", 403));
+      }
+      const [, api_key] = authorization.split(" ");
+
+      if (!api_key) {
+        return next(this.process_failed_response("Unauthorized", 403));
+      }
+
+      const userDetails = jwt.verify(api_key, process.env.JWT_SECRET);
+
+      request.user = await this.get_model("User")
+        .findById(userDetails.id)
+        .select("-password");
       next();
-    } catch (error) {
-      console.error(error);
-      res.status(401);
-      throw new Error("Not authorized, token failed");
+    } catch (e) {
+      console.log("failed");
+      const failedResponse = this.process_failed_response("Unauthorized", 403);
+      return next(failedResponse);
     }
   }
-  if (!token) {
-    res.status(401);
-    throw new Error("Not authorized, no token");
-  }
-});
 
-const authenticate_admin = (req, res, next) => {
-  if (req.user && req.user.role === "admin") {
-    next();
-  } else {
-    next(rootService.process_failed_response("Unauthorized", 403));
-  }
-};
+  async authenticate_user(req, res, next) {
+    let token;
 
-module.exports = {
-  authenticate_api_key,
-  authenticate_user,
-  authenticate_admin,
-};
+    if (
+      req.headers.authorization &&
+      req.headers.authorization.startsWith("Bearer")
+    ) {
+      try {
+        token = req.headers.authorization.split(" ")[1];
+        // console.log({ token });
+        const decoded = jwt.verify(token, process.env.JWT_SECRET);
+        // console.log({ decoded });
+        req.user = await User.findById(decoded.id).select("-password");
+        next();
+      } catch (error) {
+        console.error(error);
+        res.status(401);
+        throw new Error("Not authorized, token failed");
+      }
+    }
+    if (!token) {
+      res.status(401);
+      throw new Error("Not authorized, no token");
+    }
+  }
+
+  authenticate_admin(req, res, next) {
+    if (req.user && req.user.role === "admin") {
+      next();
+    } else {
+      next(this.process_failed_response("Unauthorized", 403));
+    }
+  }
+
+  authenticate_organization_admin(req, res, next) {
+    if (req.user && req.user.role === "organization_admin") {
+      next();
+    } else {
+      next(this.process_failed_response("Unauthorized", 403));
+    }
+  }
+}
+
+module.exports = new AuthService();

@@ -2,6 +2,16 @@
  * @author Joshua Oyeleke <oyelekeoluwasayo@gmail.com>
  **/
 const mongoose = require("mongoose");
+const glob = require("glob");
+const { resolve } = require("path");
+
+/** require all models here */
+const basePath = resolve(__dirname, "../models/");
+const files = glob.sync("*.js", { cwd: basePath });
+files.forEach((file) => {
+  if (file.toLocaleLowerCase().includes("_config")) return;
+  require(resolve(basePath, file));
+});
 
 /** */
 class SuperController {
@@ -18,6 +28,30 @@ class SuperController {
       (await model.countDocuments({ time_stamp: { $lt: time_stamp } })) + 1;
     await model.updateOne({ _id }, { id: n });
     return n;
+  }
+
+  async check_if_exists(model_name, property) {
+    const check = await this.get_model(model_name).findOne(property);
+    return !!check;
+  }
+
+  async update_data(model_name, conditions, data_to_set) {
+    try {
+      const result = await this.get_model(model_name).updateOne(
+        { ...conditions },
+        {
+          $set: { ...data_to_set },
+          // $currentDate: { updated_on: true },
+        },
+        { upsert: true } // Add the upsert option
+      );
+
+      return this.jsonize(result);
+    } catch (e) {
+      return this.process_failed_response(
+        e?.message || "Unable to update data"
+      );
+    }
   }
 
   process_failed_response(message, code = 400) {

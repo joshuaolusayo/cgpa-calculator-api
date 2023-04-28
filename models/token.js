@@ -1,6 +1,6 @@
 const { model, Schema } = require("mongoose");
 
-const TokenSchema = Schema(
+const TokenSchema = new Schema(
   {
     _userId: {
       type: Schema.Types.ObjectId,
@@ -18,4 +18,4 @@ const TokenSchema = Schema(
   { timestamps: true }
 );
 
-module.exports = model("Token", TokenSchema);
+model("Token", TokenSchema);
