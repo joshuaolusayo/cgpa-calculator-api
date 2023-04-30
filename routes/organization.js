@@ -8,7 +8,8 @@ const router = express.Router();
 try {
   router.put(
     "/:organizationId",
-    AuthService.authenticate_organization_admin,
+    AuthService.authenticate_api_key,
+    // AuthService.authenticate_organization_admin,
     asyncHandler(async (request, _, next) => {
       console.log("hhh");
       request.payload =

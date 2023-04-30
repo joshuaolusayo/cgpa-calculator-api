@@ -25,7 +25,7 @@ class AuthService extends SuperController {
       const userDetails = jwt.verify(api_key, process.env.JWT_SECRET);
 
       request.user = await this.get_model("User")
-        .findById(userDetails.id)
+        .findById(userDetails.userId)
         .select("-password");
       next();
     } catch (e) {
@@ -45,9 +45,9 @@ class AuthService extends SuperController {
       try {
         token = req.headers.authorization.split(" ")[1];
         // console.log({ token });
-        const decoded = jwt.verify(token, process.env.JWT_SECRET);
-        // console.log({ decoded });
-        req.user = await User.findById(decoded.id).select("-password");
+        const userDetails = jwt.verify(token, process.env.JWT_SECRET);
+        // console.log({ userDetails });
+        req.user = await User.findById(userDetails.userId).select("-password");
         next();
       } catch (error) {
         console.error(error);
