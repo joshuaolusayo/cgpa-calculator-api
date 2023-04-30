@@ -40,7 +40,12 @@ class UserController extends SuperController {
         name: user.name,
         email: user.email,
         role: user.role,
-        token: generateToken(user._id),
+        token: generateToken({
+          userId: user._id,
+          organizationId: user?.organization?.toString(),
+          email: user.email,
+          role: user.role,
+        }),
         createdAt: user.createdAt,
       });
     } else {
@@ -73,12 +78,14 @@ class UserController extends SuperController {
       }
       const user = await this.Model.create({
         name,
-        email,
+        email: email.toLowerCase().trim(),
         password,
         role: "organization_admin",
       });
       if (user) {
-        const verificationToken = await this.create_verification_token(user._id);
+        const verificationToken = await this.create_verification_token(
+          user._id
+        );
 
         const newOrganization = await this.create_organization(
           organizationName,
