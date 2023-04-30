@@ -42,7 +42,7 @@ class UserController extends SuperController {
         role: user.role,
         token: generateToken({
           userId: user._id,
-          organizationId: user.organization.toString(),
+          organizationId: user?.organization?.toString(),
           email: user.email,
           role: user.role,
         }),
@@ -78,7 +78,7 @@ class UserController extends SuperController {
       }
       const user = await this.Model.create({
         name,
-        email,
+        email: email.toLowerCase().trim(),
         password,
         role: "organization_admin",
       });

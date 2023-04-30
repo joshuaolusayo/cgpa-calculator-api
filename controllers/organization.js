@@ -11,53 +11,46 @@ class OrganizationController extends SuperController {
   }
 
   async update_organization_details(request) {
-    // console.log(request);
-    console.log("here");
     const { name, address } = request.body;
-    const { organizationId } = request.params;
+    let { organizationId } = request.params;
 
-    console.log({ name, address, organizationId });
-    console.log(request.user);
-    await this.verify_organization_admin(organizationId, request.user);
+    if (organizationId) {
+      organizationId = request.user.organization?.toString();
+    }
 
-    console.log("sss");
-    const updateOrganization = await this.update_data(
+    const { organization, error, status } =
+      await this.verify_organization_admin(organizationId, request.user);
+
+    if (error) return this.process_failed_response(error, status);
+
+    await this.update_data(
       "Organization",
       {
-        _id: organizationId,
+        _id: organization._id,
       },
       { name, address }
     );
 
     return this.process_successful_response({
       message: "Successfully updated organization details",
-      organization: updateOrganization,
     });
   }
 
-  async addUserToOrganization(request) {
-    // console.log()
-    const { organizationId } = request.params;
-    const { name, email, password } = request.body;
+  async add_user_to_organization(request) {
+    const { organization: organizationId } = request.user;
+    const { name, email } = request.body;
 
-    if (!organizationId || !name || !email || !password)
+    if (!organizationId || !name || !email)
       return this.process_failed_response("Bad request");
 
-    const organization = await this.verify_organization_admin(
-      organizationId,
-      request.user
-    );
+    const { organization, error, status } =
+      await this.verify_organization_admin(organizationId, request.user);
 
-    // const organization = await this.Model.findById(organizationId);
-    // if (!organizationId)
-    //   return this.process_failed_response(
-    //     "Organization with that id not found"
-    //   );
+    if (error) return this.process_failed_response(error, status);
 
-    // if (organization.admin.toString() !== request.user.organization.toString())
-    //   return this.process_failed_response("Unauthorized", 403);
-
-    const existingUser = await this.check_if_exists("User", { email });
+    const existingUser = await this.check_if_exists("User", {
+      email: email.toLowerCase().trim(),
+    });
 
     if (existingUser) {
       return this.process_failed_response(
@@ -66,12 +59,12 @@ class OrganizationController extends SuperController {
       );
     }
 
-    const user = await this.Model.create({
+    const user = await this.UserModel.create({
       name,
-      email,
-      password,
+      email: email.toLowerCase().trim(),
+      password: "123456",
       role: "organization_staff",
-      organization: organization._id,
+      organization: organizationId,
       isVerified: true,
     });
 
@@ -88,15 +81,14 @@ class OrganizationController extends SuperController {
 
   async verify_organization_admin(organizationId, currentUser) {
     const organization = await this.Model.findById(organizationId);
+
     if (!organizationId)
-      return this.process_failed_response(
-        "Organization with that id not found"
-      );
+      return { error: "Organization with that id not found" };
 
-    if (organization.admin.toString() !== currentUser.organization.toString())
-      return this.process_failed_response("Unauthorized", 403);
+    if (organization.admin.toString() !== currentUser._id.toString())
+      return { error: "Unauthorized", status: 403 };
 
-    return organization;
+    return { organization };
   }
 }
 
