@@ -1,8 +1,7 @@
 const express = require("express");
 
 const dotenv = require("dotenv");
-const connectDatabase = require("./config/mongodb");
-
+const connectDatabase = require("./config/database");
 const route_handler = require("./routes/_config");
 
 /** 3rd Party Middlewares */
