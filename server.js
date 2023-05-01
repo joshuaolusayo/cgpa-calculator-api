@@ -1,7 +1,7 @@
 const express = require("express");
 
 const dotenv = require("dotenv");
-const connectDatabase = require("./config/mongoDb");
+const connectDatabase = require("./config/mongodb");
 
 // const ImportData = require("./DataImport");
 // import productRoute from "./Routes/ProductRoutes.js";
