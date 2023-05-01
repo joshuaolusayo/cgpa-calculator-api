@@ -16,6 +16,9 @@ const user_route_handler = require("./user");
 const organization_route_handler = require("./organization");
 
 router.use(setup_request);
+router.get("/", (_, response) =>
+  response.json({ message: "Server is running" })
+);
 router.use("/api/users", user_route_handler);
 router.use("/api/organizations", organization_route_handler);
 router.use(process_response);
