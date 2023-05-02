@@ -249,6 +249,7 @@ class UserController extends SuperController {
       user: {
         id: userDetails._id,
         email: userDetails.email,
+        name: userDetails.name,
         role: userDetails.role,
         organizationName: userDetails?.organization?.name,
         organizationId: userDetails?.organization?._id,
