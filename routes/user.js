@@ -11,7 +11,7 @@ try {
       AuthService.authenticate_api_key,
       AuthService.authenticate_admin,
       asyncHandler(async (request, _, next) => {
-        request.payload = await user_controller.getAllUsers();
+        request.payload = await user_controller.get_all_users();
         next();
       })
     )

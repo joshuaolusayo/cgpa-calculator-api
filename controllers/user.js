@@ -13,7 +13,7 @@ class UserController extends SuperController {
     this.TokenModel = this.get_model("Token");
   }
 
-  async getAllUsers() {
+  async get_all_users() {
     const users = await this.Model.find({});
     if (users) {
       return this.process_successful_response({

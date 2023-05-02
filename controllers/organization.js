@@ -10,6 +10,21 @@ class OrganizationController extends SuperController {
     this.UserModel = this.get_model("User");
   }
 
+  async get_all_organizations() {
+    const organizations = await this.Model.find({});
+    if (organizations) {
+      return this.process_successful_response({
+        message: "Successfully fetched all organizations",
+        organizations,
+        total: organizations.length,
+      });
+    }
+    return this.process_failed_response(
+      "Unable to retrieve all organizations",
+      500
+    );
+  }
+
   async update_organization_details(request) {
     const { name, address } = request.body;
     let { organizationId } = request.params;

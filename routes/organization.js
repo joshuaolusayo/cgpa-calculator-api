@@ -7,6 +7,15 @@ const router = express.Router();
 
 try {
   router
+    .get(
+      "/",
+      AuthService.authenticate_api_key,
+      AuthService.authenticate_admin,
+      asyncHandler(async (request, _, next) => {
+        request.payload = await organization_controller.get_all_organizations();
+        next();
+      })
+    )
     .put(
       "/:organizationId",
       AuthService.authenticate_api_key,
