@@ -13,7 +13,7 @@ class UserController extends SuperController {
     this.TokenModel = this.get_model("Token");
   }
 
-  async getAllUsers() {
+  async get_all_users() {
     const users = await this.Model.find({});
     if (users) {
       return this.process_successful_response({
@@ -104,6 +104,51 @@ class UserController extends SuperController {
             organizationId: newOrganization._id,
             organizationName: newOrganization.name,
             verificationToken,
+          },
+          201
+        );
+      }
+      return this.process_failed_response("Unable to create user", 500);
+    } catch (e) {
+      return this.process_failed_response("An error occured here");
+    }
+  }
+
+  async create_admin(userDetails) {
+    const { name, email, password } = userDetails;
+    if (!name || !email || !password)
+      return this.process_failed_response("Invalid request");
+
+    try {
+      const existingUser = await this.check_if_exists("User", { email });
+
+      if (existingUser) {
+        return this.process_failed_response(
+          "User with that email already exists",
+          400
+        );
+      }
+
+      const user = await this.Model.create({
+        name,
+        email: email.toLowerCase().trim(),
+        password,
+        role: "admin",
+        isVerified: true,
+      });
+
+      if (user) {
+        return this.process_successful_response(
+          {
+            message: "Account created successfully",
+            userId: user._id,
+            userName: user.name,
+            userEmail: user.email,
+            token: generateToken({
+              userId: user._id,
+              email: user.email,
+              role: user.role,
+            }),
           },
           201
         );

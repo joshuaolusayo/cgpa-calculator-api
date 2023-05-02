@@ -11,7 +11,7 @@ try {
       AuthService.authenticate_api_key,
       AuthService.authenticate_admin,
       asyncHandler(async (request, _, next) => {
-        request.payload = await user_controller.getAllUsers();
+        request.payload = await user_controller.get_all_users();
         next();
       })
     )
@@ -38,6 +38,15 @@ try {
       "/resend-verification-token",
       asyncHandler(async (request, _, next) => {
         request.payload = await user_controller.resend_verification_token(
+          request.body
+        );
+        next();
+      })
+    )
+    .post(
+      "/create-admin",
+      asyncHandler(async (request, _, next) => {
+        request.payload = await user_controller.create_admin(
           request.body
         );
         next();
