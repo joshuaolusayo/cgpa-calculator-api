@@ -55,6 +55,7 @@ class SuperController {
   }
 
   process_failed_response(message, code = 400) {
+    console.log("here2");
     return {
       error: message,
       payload: null,

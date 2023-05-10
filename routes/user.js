@@ -46,9 +46,7 @@ try {
     .post(
       "/create-admin",
       asyncHandler(async (request, _, next) => {
-        request.payload = await user_controller.create_admin(
-          request.body
-        );
+        request.payload = await user_controller.create_admin(request.body);
         next();
       })
     )

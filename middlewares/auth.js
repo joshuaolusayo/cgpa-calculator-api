@@ -10,7 +10,7 @@ class AuthService extends SuperController {
     this.authenticate_api_key = this.authenticate_api_key.bind(this);
   }
 
-  async authenticate_api_key(request, _, next) {
+  authenticate_api_key = async (request, _, next) => {
     try {
       const { authorization } = request.headers;
       if (!authorization) {
@@ -29,13 +29,12 @@ class AuthService extends SuperController {
         .select("-password");
       next();
     } catch (e) {
-      console.log("failed");
       const failedResponse = this.process_failed_response("Unauthorized", 403);
       return next(failedResponse);
     }
-  }
+  };
 
-  async authenticate_user(req, res, next) {
+  authenticate_user = async (req, res, next) => {
     let token;
 
     if (
@@ -44,9 +43,7 @@ class AuthService extends SuperController {
     ) {
       try {
         token = req.headers.authorization.split(" ")[1];
-        // console.log({ token });
         const userDetails = jwt.verify(token, process.env.JWT_SECRET);
-        // console.log({ userDetails });
         req.user = await User.findById(userDetails.userId).select("-password");
         next();
       } catch (error) {
@@ -59,23 +56,23 @@ class AuthService extends SuperController {
       res.status(401);
       throw new Error("Not authorized, no token");
     }
-  }
+  };
 
-  authenticate_admin(req, res, next) {
+  authenticate_admin = (req, res, next) => {
     if (req.user && req.user.role === "admin") {
       next();
     } else {
       next(this.process_failed_response("Unauthorized", 403));
     }
-  }
+  };
 
-  authenticate_organization_admin(req, res, next) {
+  authenticate_organization_admin = (req, res, next) => {
     if (req.user && req.user.role === "organization_admin") {
       next();
     } else {
       next(this.process_failed_response("Unauthorized", 403));
     }
-  }
+  };
 }
 
 module.exports = new AuthService();
