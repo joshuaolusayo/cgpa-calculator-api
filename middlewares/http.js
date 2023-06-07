@@ -19,9 +19,10 @@ module.exports = {
   handle_error(error, request, response, next) {
     // logger.error(error.error, "handle_error");
     return response.status(error.status_code || 500).json({
-      status_code: error.status_code,
-      error: error.error,
+      status_code: error?.status_code || 500,
+      error: error?.message,
       payload: null,
+      success: false,
     });
   },
 

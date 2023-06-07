@@ -13,8 +13,17 @@ class UserController extends SuperController {
     this.TokenModel = this.get_model("Token");
   }
 
-  async get_all_users() {
-    const users = await this.Model.find({});
+  async get_all_users(request) {
+    const { query } = request;
+
+    const conditions = {};
+    if (query) {
+      // include role
+      if (query?.role) {
+        conditions.role = query.role;
+      }
+    }
+    const users = await this.Model.find(conditions).select("-password");
     if (users) {
       return this.process_successful_response({
         message: "Successfully fetched all users",
@@ -32,6 +41,18 @@ class UserController extends SuperController {
 
     if (!user)
       return this.process_failed_response("Invalid email address or password");
+
+    if (user.role === "organization_admin" && !user.isVerified)
+      return this.process_failed_response(
+        "Please, verify your email address to continue",
+        401
+      );
+
+    if (user.role === "organization_staff" && !user.isActive)
+      return this.process_failed_response(
+        "Your account has been temporarily disabled. Contact your organization admin",
+        401
+      );
 
     if (await user.matchPassword(password)) {
       return this.process_successful_response({
@@ -244,17 +265,72 @@ class UserController extends SuperController {
     });
 
     if (!userDetails) return this.process_failed_response("User not found");
+    const { _id, email, name, role, organization, isActive } = userDetails;
     return this.process_successful_response({
       message: "Successfully fetched user details",
       user: {
-        id: userDetails._id,
-        email: userDetails.email,
-        name: userDetails.name,
-        role: userDetails.role,
-        organizationName: userDetails?.organization?.name,
-        organizationId: userDetails?.organization?._id,
+        id: _id,
+        email,
+        name,
+        role,
+        organizationName: organization?.name,
+        organizationId: organization?._id,
+        isActive,
       },
     });
+  }
+
+  async update_user_details(request) {
+    const {
+      body: { name },
+      user: { _id },
+    } = request;
+    const data_to_set = { name };
+    const result = await this.update_data("User", { _id }, data_to_set);
+
+    if (result.acknowledged) {
+      return this.process_successful_response({
+        message: "User details updated successfully",
+        updatedUser: result.data,
+      });
+    }
+    return this.process_failed_response("Unable to update user details");
+  }
+
+  async toggle_staff_access(request) {
+    const {
+      body: { userId },
+    } = request;
+
+    const userToUpdate = await this.Model.findById(userId);
+
+    if (!userToUpdate)
+      return this.process_failed_response("User with that id does not exist");
+
+    if (
+      userToUpdate.organization.toString() !==
+        request.user.organization.toString() ||
+      request.user.role !== "organization_admin"
+    )
+      return this.process_failed_response("Unauthorized access", 401);
+
+    if (request.user._id === userId)
+      return this.process_failed_response(
+        "You cannot revoke your access as an admin"
+      );
+
+    const data_to_set = { isActive: !userToUpdate.isActive };
+    const result = await this.update_data("User", { _id: userId }, data_to_set);
+
+    if (result.acknowledged)
+      return this.process_successful_response({
+        message: `User is now ${
+          !userToUpdate.isActive ? "active" : "inactive"
+        }`,
+        updatedUser: result.data,
+      });
+
+    return this.process_failed_response("Unable to update user status");
   }
 }
 

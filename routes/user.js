@@ -11,7 +11,7 @@ try {
       AuthService.authenticate_api_key,
       AuthService.authenticate_admin,
       asyncHandler(async (request, _, next) => {
-        request.payload = await user_controller.get_all_users();
+        request.payload = await user_controller.get_all_users(request);
         next();
       })
     )
@@ -31,6 +31,23 @@ try {
         request.payload = await user_controller.verify_user_email_address(
           request.params
         );
+        next();
+      })
+    )
+    .put(
+      "/me",
+      AuthService.authenticate_api_key,
+      asyncHandler(async (request, _, next) => {
+        request.payload = await user_controller.update_user_details(request);
+        next();
+      })
+    )
+    .post(
+      "/toggle-staff-access",
+      AuthService.authenticate_api_key,
+      AuthService.authenticate_organization_admin,
+      asyncHandler(async (request, _, next) => {
+        request.payload = await user_controller.toggle_staff_access(request);
         next();
       })
     )

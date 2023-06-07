@@ -8,6 +8,11 @@ const TokenSchema = new Schema(
       required: true,
     },
     token: { type: String, required: true },
+    type: {
+      type: String,
+      enum: ["password_reset", "email_verification"],
+      default: "email_verification",
+    },
     createdAt: {
       type: Date,
       required: true,
