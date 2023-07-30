@@ -50,17 +50,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var glob_1 = require("glob");
-var path_1 = require("path");
 var models_1 = __importDefault(require("../database/models"));
 /** require all models here */
-var basePath = (0, path_1.resolve)(__dirname, "../database/models/");
-var files = glob_1.glob.sync("*.ts", { cwd: basePath });
-files.forEach(function (file) {
-    if (file.toLowerCase().includes("_config"))
-        return;
-    require((0, path_1.resolve)(basePath, file));
-});
+// const basePath = resolve(__dirname, "../database/models/");
+// const files = glob.sync("*.ts", { cwd: basePath });
+// files.forEach((file) => {
+//   if (file.toLowerCase().includes("_config")) return;
+//   require(resolve(basePath, file));
+// });
 var SuperController = /** @class */ (function () {
     function SuperController() {
     }

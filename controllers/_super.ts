@@ -1,15 +1,5 @@
-import { glob } from "glob";
 import { Model } from "mongoose";
-import { resolve } from "path";
 import models from "../database/models";
-
-/** require all models here */
-const basePath = resolve(__dirname, "../database/models/");
-const files = glob.sync("*.ts", { cwd: basePath });
-files.forEach((file) => {
-  if (file.toLowerCase().includes("_config")) return;
-  require(resolve(basePath, file));
-});
 
 class SuperController {
   // get_model<T>(model_name: string): Model<T> {
