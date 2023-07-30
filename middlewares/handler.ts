@@ -1,3 +1,4 @@
+import { CustomRequest } from "@/utilities/interface";
 import { Request, Response, NextFunction } from "express";
 
 interface CustomError extends Error {
@@ -31,7 +32,7 @@ export default {
     });
   },
 
-  processResponse(request: Request, response: Response, next: NextFunction) {
+  processResponse(request: CustomRequest, response: Response, next: NextFunction) {
     if (!request.payload) return next();
 
     const { status_code } = request.payload;

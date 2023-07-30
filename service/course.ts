@@ -8,6 +8,7 @@ import {
   buildWildcardOptions as build_wildcard_options,
 } from "../utilities/buildQuery";
 import { IdSchema } from "../database/schema/general";
+import { CustomRequest } from "@/utilities/interface";
 
 class UserService extends RootService {
   user_controller: Controller;
@@ -19,7 +20,7 @@ class UserService extends RootService {
     this.course_controller = course_controller;
   }
 
-  async calculate_cgpa(request: Request, next: NextFunction) {
+  async calculate_cgpa(request: CustomRequest, next: NextFunction) {
     const current_user = request?.user;
     try {
       const grades = request.body;
@@ -87,7 +88,7 @@ class UserService extends RootService {
     }
   }
 
-  async fetch_and_calculate_cgpa(request: Request, next: NextFunction) {
+  async fetch_and_calculate_cgpa(request: CustomRequest, next: NextFunction) {
     const current_user = request.user;
     try {
       const courses = await this.course_controller.read_records({
@@ -124,7 +125,7 @@ class UserService extends RootService {
     }
   }
 
-  async create_new_course(request: Request, next: NextFunction) {
+  async create_new_course(request: CustomRequest, next: NextFunction) {
     const { body, user } = request;
     console.log(user);
     const { error } = SingleCourseSchema.validate(body);

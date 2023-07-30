@@ -1,7 +1,8 @@
 import jwt from "jsonwebtoken";
-import { Request, Response, NextFunction } from "express";
+import { Response, NextFunction } from "express";
 import SuperController from "../controllers/_super";
 import Environment from "../config/env";
+import { CustomRequest } from "@/utilities/interface";
 
 class AuthService extends SuperController {
   user;
@@ -12,7 +13,7 @@ class AuthService extends SuperController {
   }
 
   authenticate_api_key = async (
-    request: Request,
+    request: CustomRequest,
     _: Response,
     next: NextFunction
   ): Promise<void> => {
@@ -38,9 +39,9 @@ class AuthService extends SuperController {
       return next(failedResponse);
     }
   };
-  
+
   optional_authenticate_api_key = async (
-    request: Request,
+    request: CustomRequest,
     _: Response,
     next: NextFunction
   ): Promise<void> => {
@@ -68,7 +69,7 @@ class AuthService extends SuperController {
   };
 
   authenticate_user = async (
-    req: Request,
+    req: CustomRequest,
     res: Response,
     next: NextFunction
   ): Promise<void> => {
@@ -90,7 +91,7 @@ class AuthService extends SuperController {
   };
 
   authenticate_admin = async (
-    req: Request,
+    req: CustomRequest,
     res: Response,
     next: NextFunction
   ): Promise<void> => {

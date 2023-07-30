@@ -1,6 +1,7 @@
 import { glob } from "glob";
-import mongoose, { Model } from "mongoose";
+import { Model, Schema } from "mongoose";
 import { resolve } from "path";
+import models from "../database/models";
 
 /** require all models here */
 const basePath = resolve(__dirname, "../database/models/");
@@ -11,8 +12,16 @@ files.forEach((file) => {
 });
 
 class SuperController {
-  get_model<T>(model_name: string): Model<T> {
-    return mongoose.model<T>(model_name);
+  // get_model<T>(model_name: string): Model<T> {
+  //   return mongoose.model<T>(model_name);
+  // }
+
+  get_model(model_name) {
+    const Model = models[model_name];
+    if (!Model) {
+      throw new Error(`Model not found: ${model_name}`);
+    }
+    return Model;
   }
 
   jsonize<T>(data: T): T {

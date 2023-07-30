@@ -8,7 +8,7 @@ interface ServerConfigModule {
 }
 
 export default function serverConfig(
-  app: typeof Application,
+  app: Application,
   mongoose: Mongoose,
   serverInit: any,
   config: { PORT: string; IP: string }
