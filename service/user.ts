@@ -33,10 +33,10 @@ class UserService extends RootService {
     const current_user = request.user;
     try {
       const result = await this.user_controller.read_records(
-        { _id: current_user._id },
+        { _id: current_user._id, ...this.standard_query_meta },
         "email role is_active"
       );
-      return this.process_multiple_read_results(result);
+      return this.process_single_read(result.data[0]);
     } catch (e) {
       next(e);
     }
