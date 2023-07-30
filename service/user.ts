@@ -29,6 +29,19 @@ class UserService extends RootService {
     }
   }
 
+  async get_current_user(request: Request, next: NextFunction) {
+    const current_user = request.user;
+    try {
+      const result = await this.user_controller.read_records(
+        { _id: current_user._id },
+        "email role is_active"
+      );
+      return this.process_multiple_read_results(result);
+    } catch (e) {
+      next(e);
+    }
+  }
+
   async read_record_by_id(request, next) {
     try {
       const { id } = request.params;

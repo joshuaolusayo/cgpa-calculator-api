@@ -16,6 +16,14 @@ router
       next();
     }
   )
+  .get(
+    "/profile/me",
+    auth_service.authenticate_user,
+    async (request: CustomRequest, _, next: NextFunction) => {
+      request.payload = await user_service.get_current_user(request, next);
+      next();
+    }
+  )
   .post("/", async (request: CustomRequest, _, next: NextFunction) => {
     request.payload = await user_service.create_user(request, next);
     next();

@@ -80,11 +80,10 @@ class AuthService extends SuperController {
           return next(error);
         }
 
-        // Check if the authenticated user has the 'user' role
         if (req.user) {
-          next(); // User is authenticated and has 'admin' role, proceed to the next middleware
+          next();
         } else {
-          next(this.process_failed_response("Unauthorized", 403)); // User does not have 'admin' role
+          next(this.process_failed_response("Unauthorized", 403));
         }
       });
     } catch (error) {}
