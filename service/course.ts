@@ -1,8 +1,8 @@
-import { Request, NextFunction } from "express";
+import { NextFunction } from "express";
 import Controller from "../controllers";
 import RootService from "./root";
 import { CourseSchema, SingleCourseSchema } from "../database/schema/general";
-import { check_password_match, generate_token } from "../utilities/general";
+// import { check_password_match, generate_token } from "../utilities/general";
 import {
   buildQuery as build_query,
   buildWildcardOptions as build_wildcard_options,

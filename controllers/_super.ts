@@ -1,5 +1,5 @@
 import { glob } from "glob";
-import { Model, Schema } from "mongoose";
+import { Model } from "mongoose";
 import { resolve } from "path";
 import models from "../database/models";
 
