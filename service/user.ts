@@ -1,7 +1,7 @@
 import { Request, NextFunction } from "express";
 import Controller from "../controllers";
 import RootService from "./root";
-import { AuthSchema } from "../database/schema/user";
+import { NewAccountSchema, AuthSchema } from "../database/schema/user";
 import { check_password_match, generate_token } from "../utilities/general";
 import {
   buildQuery as build_query,
@@ -125,7 +125,7 @@ class UserService extends RootService {
   async create_user(request: Request, next: NextFunction) {
     try {
       const { body } = request;
-      const { error } = AuthSchema.validate(body);
+      const { error } = NewAccountSchema.validate(body);
       if (error) throw new Error(error);
 
       const check_if_exists = await this.user_controller.check_if_exists(
