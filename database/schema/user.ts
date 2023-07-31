@@ -7,7 +7,8 @@ joi.objectId = require('joi-objectid')(joi);
 
 export const AuthSchema = joi.object({
   email: joi.string().email().required(),
-  password: joi.string().required()
+  password: joi.string().required(),
+  username: joi.string().optional(),
 });
 
 export const UserIdSchema = joi.object({

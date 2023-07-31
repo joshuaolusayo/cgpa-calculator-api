@@ -21,7 +21,7 @@ class UserService extends RootService {
     try {
       const result = await this.user_controller.read_records(
         null,
-        "email role"
+        "email role username"
       );
       return this.process_multiple_read_results(result);
     } catch (e) {
@@ -34,7 +34,7 @@ class UserService extends RootService {
     try {
       const result = await this.user_controller.read_records(
         { _id: current_user._id, ...this.standard_query_meta },
-        "email role is_active"
+        "email role is_active username"
       );
       return this.process_single_read(result.data[0]);
     } catch (e) {
@@ -141,7 +141,7 @@ class UserService extends RootService {
 
       const result = await this.user_controller.create_record({
         ...body,
-        role: "admin",
+        // role: "admin",
       });
 
       return this.process_single_read(result);
