@@ -80,6 +80,9 @@ class UserService extends RootService {
 
       return this.process_successful_response({
         cgpa,
+        totalGradePoints,
+        totalCredits,
+        totalCourses: grades.length,
         message: "Successfully calculated result",
         ...info,
       });
@@ -117,6 +120,9 @@ class UserService extends RootService {
 
       return this.process_successful_response({
         cgpa,
+        totalGradePoints,
+        totalCredits,
+        totalCourses: courses.data?.length || 0,
         message: "Successfully calculated result",
         ...info,
       });
