@@ -1,6 +1,6 @@
 import express from "express";
 import mongoose from "mongoose";
-
+import cors from "cors";
 import Environment from "./config/env";
 import expressConfig from "./server";
 import serverConfig from "./index";
@@ -23,6 +23,7 @@ mongoDbConnection(mongoose, Environment, {
   connectTimeoutMS: 1000,
 }).connectToMongo();
 
+app.use(cors());
 app.use("/", route_handler);
 
 // Expose app
