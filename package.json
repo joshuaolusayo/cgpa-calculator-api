@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.ts",
-    "server": "nodemon app.ts",
+    "server": "nodemon app.ts -p 5001",
     "start:prod": "tsc && node build/app.js",
     "server:prod": "tsc && nodemon build/app.js",
     "build": "tsc"

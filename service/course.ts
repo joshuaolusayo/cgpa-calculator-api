@@ -25,7 +25,8 @@ class UserService extends RootService {
     try {
       const grades = request.body;
       const { error } = CourseSchema.validate(grades);
-      if (error) throw new Error(error);
+      if (error) next(error);
+
       let totalCredits = 0;
       let totalGradePoints = 0;
       for (const grade of grades) {
@@ -100,7 +101,7 @@ class UserService extends RootService {
       });
 
       if (courses.data.length === 0) {
-        throw new Error("No courses found for the user");
+        next("No courses found for the user");
       }
 
       let totalCredits = 0;
@@ -133,9 +134,9 @@ class UserService extends RootService {
 
   async create_new_course(request: CustomRequest, next: NextFunction) {
     const { body, user } = request;
-    console.log(user);
+
     const { error } = SingleCourseSchema.validate(body);
-    if (error) throw new Error(error);
+    if (error) next(error);
 
     const check_if_exists = await this.course_controller.check_if_exists(
       "Course",
@@ -321,7 +322,7 @@ class UserService extends RootService {
       }
 
       const { error } = IdSchema.validate({ id });
-      if (error) throw new Error(error);
+      if (error) next(error);
 
       const new_data = this.delete_record_metadata(data);
       const result = await this.course_controller.update_records(
@@ -362,7 +363,7 @@ class UserService extends RootService {
       }
 
       const { error } = IdSchema.validate({ id });
-      if (error) throw new Error(error);
+      if (error) next(error);
 
       const result = await this.course_controller.delete_records({
         _id: id,

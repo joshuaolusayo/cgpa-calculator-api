@@ -126,7 +126,7 @@ class UserService extends RootService {
     try {
       const { body } = request;
       const { error } = NewAccountSchema.validate(body);
-      if (error) throw new Error(error);
+      if (error) next(error);
 
       const check_if_exists = await this.user_controller.check_if_exists(
         "User",
@@ -155,7 +155,7 @@ class UserService extends RootService {
     try {
       const { body } = request;
       const { error } = AuthSchema.validate(body);
-      if (error) throw new Error(error);
+      if (error) next(error);
 
       const { email, password } = request.body;
 
@@ -200,7 +200,7 @@ class UserService extends RootService {
       }
 
       const { error } = IdSchema.validate({ id });
-      if (error) throw new Error(error);
+      if (error) next(error);
 
       const new_data = this.delete_record_metadata(data);
       const result = await this.user_controller.update_records(
@@ -240,7 +240,7 @@ class UserService extends RootService {
       }
 
       const { error } = IdSchema.validate({ id });
-      if (error) throw new Error(error);
+      if (error) next(error);
 
       const result = await this.user_controller.delete_records({
         _id: id,
